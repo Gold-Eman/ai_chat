@@ -88,7 +88,7 @@ const handleSubmit = async (e) => {
 
     const response = await fetch('https://ai-chat-7cvg.onrender.com/', {
         method: 'POST',
-        headers: { 
+        headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
