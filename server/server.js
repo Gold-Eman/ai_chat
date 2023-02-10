@@ -27,11 +27,11 @@ app.post('/', async (req, res) => {
 
     const response = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: "",
-      temperature: 0.7,
-      max_tokens: 3000,
+      prompt: `${prompt}`,
+      temperature: 0.9,
+      max_tokens: 3800,
       top_p: 1,
-      frequency_penalty: 0,
+      frequency_penalty: 0.5,
       presence_penalty: 0,
     });
 
